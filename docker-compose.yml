@@ -1,0 +1,11 @@
+name: api-games-server
+
+services:
+  pg:
+    image: bitnami/postgresql:latest # Imagem utilizada
+    ports:
+      - "5432:5432" # Porta do servidor
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=collection
